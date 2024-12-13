@@ -1,0 +1,118 @@
+/* main.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: lightgray !important;
+    color: #333333;
+
+}
+
+#background-theme {
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#profile-wrapper {
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    align-self: center;
+}
+
+h4 {
+    font-size: 24px;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #666666;
+}
+
+.card-body {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Для вертикального расположения элементов */
+    justify-content: space-between; /* Для распределения контента по высоте */
+    height: 100%;
+}
+
+/* Гарантируем, что карточки будут одинаковыми по высоте */
+.row .col-md-3, .row .col-md-9 {
+    display: flex;
+    flex-direction: column;
+}
+
+.row .col-md-3 .card,
+.row .col-md-9 .card {
+    flex: 1; /* Делает карточки гибкими и позволяет им заполнять доступное пространство */
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.certificate-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Отступ между изображениями */
+}
+
+.certificate-item {
+    flex: 1;
+    max-width: 200px; /* Максимальная ширина для изображения */
+    height: auto;
+}
+
+.certificate-img {
+    max-width: 100%;   /* Ограничиваем ширину изображения */
+    max-height: 100%;  /* Ограничиваем высоту изображения */
+    object-fit: contain; /* Сохраняем пропорции изображения, чтобы оно не выходило за пределы */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certificate-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
